@@ -1,41 +1,158 @@
-# Expense-Tracker-Mern
-A fully-featured Expense-Tracker WebApp , built with the MERN stack.
+# Expense Tracker WebApp (MERN Stack)
 
+A fully-featured, responsive Expense Tracker Web Application that allows users to track and categorize their daily income and expenses efficiently. Built using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) with modern UI via **Tailwind CSS**.
 
-### Backend 
-<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" /> 
-### Front-end
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-### Database 
-<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/960fe4d9-fc14-49af-abcd-82cd94587293/deploy-status?branch=dev)](https://app.netlify.com/sites/track-yur-expense/deploys)
+## Problem Statement
 
-### Installation
-1) Clone this repository  
+Managing daily expenses and incomes can become overwhelming without a structured and accessible tracking system. Many people struggle to maintain budgets, categorize expenses, and visualize financial data. This project simplifies the financial management process by providing a user-friendly, full-stack solution to track and manage expenses securely and visually.
+
+---
+
+## Objectives
+
+* Add, edit, and delete income or expense records.
+* Categorize transactions with custom or preset tags.
+* Store user data securely in a MongoDB database.
+* Visualize financial statistics with graphs and summaries.
+* Deploy a responsive app accessible across devices.
+
+---
+
+## Tech Stack
+
+| Tool/Tech        | Purpose                                 |
+| ---------------- | --------------------------------------- |
+| **MongoDB**      | NoSQL database for storing transactions |
+| **Express.js**   | Backend web framework for API logic     |
+| **React.js**     | Frontend JavaScript library for UI      |
+| **Node.js**      | Backend runtime environment             |
+| **Tailwind CSS** | Styling and responsive layout           |
+| **Netlify**      | Frontend deployment                     |
+
+---
+
+## Installation Guide
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ihtasham42/Expense-Tracker-Mern.git
 ```
-git clone https://github.com/ihtasham42/social-media-app.git
-```
-2) Install dependencies  
-```
-cd Expense-Tracker_Mern  
-cd frontend
+
+### 2. Install Backend Dependencies
+
+```bash
+cd Expense-Tracker-Mern
 npm install
-cd..
+```
+
+### 3. Install Frontend Dependencies
+
+```bash
 cd client
 npm install
 ```
-3) Configure environment variables in your new .env file. To acquire your MONGO_URI, create a cluster for free over at https://www.mongodb.com/.
+
+### 4. Environment Setup
+
+Create a `.env` file in the root directory with the following:
+
+```env
+MONGO_URI=<your_mongo_uri>
+PORT=5000
 ```
-MONGO_URI=<YOUR_MONGO_URI> 
-```
-4) Run the server
-```
+
+> You can get your MongoDB URI by creating a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+
+---
+
+## Running the Project Locally
+
+### Start Backend Server
+
+```bash
 npm run server
 ```
-5) Start a new terminal and run react's development server
-```
-cd social-media-app
-cd frontend
+
+### Start Frontend React App
+
+```bash
+cd client
 npm start
 ```
+
+Now, navigate to: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Interface Snapshots
+
+### Dashboard UI
+
+<img src="screenshots/e1.png" width="600"/>
+
+### Add Transaction Form
+
+<img src="screenshots/e2.png" width="600"/>
+
+### Analytics and Charts
+
+<img src="screenshots/e3.png" width="600"/>
+
+> *These screenshots visually summarize the key features and interface of the application.*
+
+---
+
+## Features Overview
+
+* **Add/Edit/Delete Transactions**: Manage financial records easily.
+* **Categorization**: Transactions organized with category filters.
+* **Statistics Dashboard**: View total income, expense, and savings.
+* **Data Visualization**: Beautiful pie/bar charts powered by `chart.js`.
+* **Responsive Design**: Optimized for desktop and mobile.
+* **Secure Backend**: Built with Express and connected to MongoDB.
+
+---
+
+## Project Structure
+
+```bash
+Expense-Tracker-Mern/
+│
+├── client/                  # React Frontend
+│   ├── public/
+│   └── src/
+│       ├── components/      # Reusable UI Components
+│       ├── pages/           # Routes & Pages
+│       └── App.js           # Root Component
+│
+├── config/
+│   └── db.js                # MongoDB connection setup
+│
+├── models/
+│   └── Transaction.js       # Mongoose schema
+│
+├── routes/
+│   └── transactionRoutes.js # REST API Routes
+│
+├── controllers/
+│   └── transactionController.js # Route handlers
+│
+├── .env                     # Environment variables
+├── server.js                # Entry point for backend
+└── package.json
+```
+
+---
+
+## Future Improvements
+
+* Cloud storage integration for exporting data
+* PWA (Progressive Web App) support
+* Monthly/yearly financial insights
+
+---
+
+

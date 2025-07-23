@@ -91,15 +91,15 @@ Now, navigate to: [http://localhost:3000](http://localhost:3000)
 
 ### Dashboard UI
 
-<img src="screenshots/e1.png" width="600"/>
+<img src="output/e1.png" width="600"/>
 
 ### Add Transaction Form
 
-<img src="screenshots/e2.png" width="600"/>
+<img src="output/e2.png" width="600"/>
 
 ### Analytics and Charts
 
-<img src="screenshots/e3.png" width="600"/>
+<img src="output/e3.png" width="600"/>
 
 > *These screenshots visually summarize the key features and interface of the application.*
 

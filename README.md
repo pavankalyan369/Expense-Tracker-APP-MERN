@@ -39,6 +39,3 @@ cd social-media-app
 cd frontend
 npm start
 ```
-# Expense-Tracker-APP-MERN
-# Expense-Tracker-APP-MERN
-# Expense-Tracker-APP-MERN

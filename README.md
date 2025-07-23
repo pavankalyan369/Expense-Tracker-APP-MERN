@@ -89,17 +89,17 @@ Now, navigate to: [http://localhost:3000](http://localhost:3000)
 
 ## Interface Snapshots
 
-### Dashboard UI
+### Registration Page
 
-<img src="output/e1.png" width="600"/>
+<img src="outputs/e1.png" width="600"/>
 
-### Add Transaction Form
+### Login Page
 
-<img src="output/e2.png" width="600"/>
+<img src="outputs/e2.png" width="600"/>
 
-### Analytics and Charts
+### User Interface
 
-<img src="output/e3.png" width="600"/>
+<img src="outputs/e3.png" width="600"/>
 
 > *These screenshots visually summarize the key features and interface of the application.*
 
